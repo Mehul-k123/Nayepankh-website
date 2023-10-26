@@ -260,7 +260,7 @@ nav{
 .hero {
     text-align: center;
     padding: 200px 0;
-    background-image: url('image10.avif'); /* Replace with your hero image */
+    background-image: url('../../public/assets/image10.avif');
     background-size: cover;
     background-position: center;
     color: #fff;

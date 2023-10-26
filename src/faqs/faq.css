@@ -15,7 +15,7 @@ body {
   padding: 0;
   margin-top: 3%;
   font-family: 'Hind', sans-serif;
-  background: url('image4.avif') no-repeat center center fixed;
+  background: url('../../public/assets/image4.avif') no-repeat center center fixed;
   background-size: cover;
   color: #0b0f17;
   display: flex;
