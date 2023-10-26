@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #107fe7;
+    --accent-color: #3fa4f2;
+    --accent-color-dark: #1d69a3;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    /* color: skyblue; */
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+ 
+.container{
+    max-width: 1180px;
+    margin-inline: auto ;
+    overflow: hidden ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 75px; 
+}
+
+nav{
+    background-color: rgb(186, 17, 17);
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    height: 95px;
+    top: 0;
+    z-index: 99;
+    left:0;
+    right:0;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding: 8px 0 ;
+}
+
+.logo img{
+    padding: 10px;
+    padding-top: 15px;
+    width: 200px;
+}
+
+.nav-main ul{
+   gap: 15px;
+   padding-top: 10px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+
+.hover-link a:hover{
+    color: white;
+}
+
+.hover-link:active{
+    color: aqua;     
+}
+
+.nav-item.active{
+    color:aqua;
+}
+
+
+  .hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1052px) 
+ {
+    .card {
+        margin: auto; 
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding-block: 10px;
+        margin-top: 62px;
+    }
+    .flex{
+    flex-direction: row;
+   } 
+   .card{
+    margin-right: 25px;
+    margin-left: 25px;
+   }
+   nav{
+    height: 75px;
+   }
+   .nav-main ul li{
+    gap: 0px;
+    padding-top: 0px;
+    margin-top: 0;
+ }
+ .logo img{
+    margin-left: 10px;
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%; 
+    top: 4.4rem;
+    flex-direction: column;
+    background-color: rgb(186, 17, 17);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 0.5rem 0;
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 40px;
+
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.footer{
+    padding: 0;
+}
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.about-text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-image {
+    max-width: 100%;
+    display: flex;
+}
+.about-image img {
+   object-fit: cover;
+}
+
+.mission {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    margin: 1rem;
+}
+
+.team-image {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        flex-direction: row;
+    }
+
+    .about-text {
+        margin-right: 2rem;
+    }
+
+    .team-member {
+        flex: 0 0 calc(33.3333% - 2rem);
+    }
+}
+
+.icons a {
+    text-decoration: none;
+    color: #120404;
+}
+
+.icons ion-icon {
+    color: #100202;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: white
+}
+
+.footer{
+    background-color:  rgb(186, 17, 17);
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
