@@ -163,6 +163,13 @@ form {
 
 label, input {
     margin-bottom: 10px;
+    padding: 5px;
+}
+#commentsM{
+    margin-top: 8px;
+}
+#payment-method{
+    height: 2rem;
 }
 
 input {
