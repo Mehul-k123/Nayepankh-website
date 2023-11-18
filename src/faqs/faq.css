@@ -173,6 +173,7 @@ nav{
 
 .nav-menu.active {
   left: 0;
+  top: 6%;
 }
 
 .nav-item {

@@ -200,11 +200,12 @@ header {
 }
 
 .about-image {
-    max-width: 100%;
+    /* max-width: 100%; */
     display: flex;
 }
 .about-image img {
    object-fit: cover;
+   width: 100%;
 }
 
 .mission {

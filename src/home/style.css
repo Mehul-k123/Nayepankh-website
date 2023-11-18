@@ -24,8 +24,8 @@ p{
     line-height: 1.4rem;
 }
 
-a{
-    text-decoration: none;
+a {
+    text-decoration: none ;
     color: aqua;
 }
 
@@ -77,6 +77,10 @@ nav{
    padding-top: 10px;
 }
 
+.nav-item a{
+        text-decoration: none ;
+        color: aqua;
+}
 .hover-link{
     cursor: pointer;
 }
@@ -115,6 +119,7 @@ nav{
     margin-left: 40px;
     margin-top: 40px;
     margin-right: 40px;
+
 }
 
 .image {
@@ -125,16 +130,21 @@ nav{
     flex: 1;
 }
 
+
 @media (max-width: 768px) {
     .containerimg {
         flex-direction: column;
     }
+    
 }
 
 @media screen and (min-width: 769px) and (max-width: 1052px) 
  {
     .card {
         margin: auto; 
+    }
+    .image{
+        width: 197%;
     }
    
 }
