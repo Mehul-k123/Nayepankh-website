@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates</title>
-    <link rel="stylesheet" href="certificate.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="community.css">
     <link rel="shortcut icon" href="../../public/assets/nayepankh-favicon-black.png" type="image/x-icon">
 </head>
 <body>
     <nav>
         <div class="main-nav container flex">
-            <a href="certificate.html" class="logo" onclick="reload()">
+            <a href="contact.html" class="logo" onclick="reload()">
                 <img src="../../public/assets/nayepankh-high-resolution-logo-black-transparent.png" alt="logo">
             </a>
    
@@ -34,48 +34,29 @@
         </div>
     </div>
     </nav>
-   <main>
-    <div class="container">
-        <div class="certification">
-            <img src="https://via.placeholder.com/600x400" alt="Certification 1">
-            <div class="certification-info">
-                <h2>Certification Name 1</h2>
-                <p>Issued by: Certification Authority 1</p>
-                <p>Date: January 1, 2023</p>
-            </div>
-        </div>
-
-        <div class="certification">
-            <img src="https://via.placeholder.com/600x400" alt="Certification 2">
-            <div class="certification-info">
-                <h2>Certification Name 2</h2>
-                <p>Issued by: Certification Authority 2</p>
-                <p>Date: February 15, 2023</p>
-            </div>
-        </div>
-
+    <main>
+        <header>
+            <h1>Nayepankh Community</h1>
+        </header>
     
+        
+    <section id="reviews">
+        <!-- User reviews will be dynamically added here -->
+    </section>
 
-        <div class="certification">
-            <img src="https://via.placeholder.com/600x400" alt="Certification 3">
-            <div class="certification-info">
-                <h2>Certification Name 3</h2>
-                <p>Issued by: Certification Authority 3</p>
-                <p>Date: March 20, 2023</p>
-            </div>
-        </div>
+    <section id="addReview">
+        <h2>Add Your Review</h2>
+        <form id="reviewForm">
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" required>
+            
+            <label for="review">Your Review:</label>
+            <textarea id="review" required></textarea>
+            
+            <button type="button" onclick="submitReview()">Submit Review</button>
+        </form>
+    </section>
 
-        <div class="certification">
-            <img src="https://via.placeholder.com/600x400" alt="Certification 3">
-            <div class="certification-info">
-                <h2>Certification Name 4</h2>
-                <p>Issued by: Certification Authority 4</p>
-                <p>Date: June 17, 2023</p>
-            </div>
-        </div>
-
-
-    </div>
     </main>
 
     
@@ -103,5 +84,6 @@
 
 <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 <script src="../home/script.js"></script>
+<script src="community.js"></script>
 </body>
 </html>
