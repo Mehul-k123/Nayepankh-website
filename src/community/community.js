@@ -35,5 +35,6 @@ function submitReview() {
         document.getElementById('review').value = '';
     } else {
         alert('Please enter both your name and review.');
+        //checking of empty fields
     }
 }
